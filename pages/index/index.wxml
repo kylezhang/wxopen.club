@@ -1,0 +1,16 @@
+<view class="">
+  <scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="lower">
+    <block wx:for="{{arr}}" wx:for-index="id" wx:for-item="item">
+      <view catchtap="gotoDetail" id="{{item.id}}">
+        <view class="author">
+          <image src="{{item.author.avatar_url}}" class="author-avatar" background-size="cover"></image>
+          <view class="post-read">{{item.reply_count}}/{{item.visit_count}}</view>
+          <view class="author-name">{{item.author.loginname}}</view>
+        </view>
+        <view class="post-title">
+          {{item.title}}
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
