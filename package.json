@@ -6,9 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylezhang/wxopen.club.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylezhang/wxopen.club/issues"
+  },
+  "homepage": "https://github.com/kylezhang/wxopen.club#readme",
   "dependencies": {
     "moment": "^2.17.1"
   }
