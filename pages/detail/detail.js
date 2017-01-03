@@ -17,7 +17,7 @@ Page({
     const id   = this.data.id;
 
     wx.request({
-      url: `http://wxopen.club/api/v1/topic/${id}?mdrender=false`,
+      url: `https://cnodejs.org/api/v1/topic/${id}?mdrender=false`,
       header: {
         'Content-Type': 'application/json'
       },

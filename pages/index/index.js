@@ -43,12 +43,16 @@ Page({
     const {page, tab, limit} = this.data.opts;
 
     wx.request({
-      url: `http://wxopen.club/api/v1/topics?page=${page}&tab=${tab}&limit=${limit}`,
+      url: `https://cnodejs.org/api/v1/topics`,
+      data: {
+        page: page,
+        tab : tab,
+        limit: limit 
+      },
       header: {
         'Content-Type': 'application/json'
       },
       success: function(res) {
-        // console.log('frome cnodejs data====：', res.data)
         if(res.data.success){
           let resData = res.data.data
           that.setData({
